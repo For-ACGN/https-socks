@@ -19,3 +19,17 @@
 
 # Go workspace file
 go.work
+
+# Binaries in cmd directory
+cmd/**/*.exe
+cmd/**/*.exe~
+cmd/**/*.dll
+cmd/**/*.so
+cmd/**/*.dylib
+cmd/**/*.elf
+
+# build
+bin
+
+# GoLand
+.idea
