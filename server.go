@@ -1,1 +1,8 @@
-package httpssocks
+package hsocks
+
+type Server struct {
+}
+
+func NewServer() {
+
+}

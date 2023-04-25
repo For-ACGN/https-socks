@@ -1,1 +1,1 @@
-package httpssocks
+package hsocks
