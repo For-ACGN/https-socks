@@ -27,7 +27,7 @@ type ServerConfig struct {
 // ClientConfig contains configurations for proxy client.
 type ClientConfig struct {
 	Common struct {
-		PassHash string `toml:"pwd_hash"`
+		Password string `toml:"password"`
 		LogPath  string `toml:"log_path"`
 	} `toml:"common"`
 
