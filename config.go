@@ -43,7 +43,7 @@ type ClientConfig struct {
 	} `toml:"server"`
 
 	Front struct {
-		Mode     string `toml:"mode"` // "multi", "http", "socks" TODO move to toml
+		Mode     string `toml:"mode"`
 		Network  string `toml:"network"`
 		Address  string `toml:"address"`
 		Username string `toml:"username"`
@@ -55,8 +55,8 @@ type ClientConfig struct {
 type duration time.Duration
 
 // MarshalText implement encoding.TextMarshaler.
-func (d *duration) MarshalText() ([]byte, error) {
-	return []byte(time.Duration(*d).String()), nil
+func (d duration) MarshalText() ([]byte, error) {
+	return []byte(time.Duration(d).String()), nil
 }
 
 // UnmarshalText implement encoding.TextUnmarshaler.
